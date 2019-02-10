@@ -17,6 +17,12 @@
 		E3208A53220F3D580038F360 /* Ottr_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A52220F3D580038F360 /* Ottr_iOSTests.swift */; };
 		E3208A5E220F3D580038F360 /* Ottr_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A5D220F3D580038F360 /* Ottr_iOSUITests.swift */; };
 		E3208A6D220F405C0038F360 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A6C220F405C0038F360 /* Cookie.swift */; };
+		E3208A73220F69B50038F360 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A72220F69B50038F360 /* User.swift */; };
+		E3208A75220F69DA0038F360 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A74220F69DA0038F360 /* UserActions.swift */; };
+		E3208A77220F6A280038F360 /* UserReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A76220F6A280038F360 /* UserReducer.swift */; };
+		E3208A79220F6AD00038F360 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A78220F6AD00038F360 /* AppReducer.swift */; };
+		E3208A7B220F72C60038F360 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A7A220F72C60038F360 /* API.swift */; };
+		E3208A7D220F92E90038F360 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3208A7C220F92E90038F360 /* LoginViewController.swift */; };
 		F955DC088CC3084D19D87976 /* Pods_Ottr_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C0A1BD9A67D5EC8F7932CAE /* Pods_Ottr_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +67,12 @@
 		E3208A5D220F3D580038F360 /* Ottr_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ottr_iOSUITests.swift; sourceTree = "<group>"; };
 		E3208A5F220F3D580038F360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3208A6C220F405C0038F360 /* Cookie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		E3208A72220F69B50038F360 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3208A74220F69DA0038F360 /* UserActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActions.swift; sourceTree = "<group>"; };
+		E3208A76220F6A280038F360 /* UserReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReducer.swift; sourceTree = "<group>"; };
+		E3208A78220F6AD00038F360 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		E3208A7A220F72C60038F360 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E3208A7C220F92E90038F360 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				E3208A3D220F3D560038F360 /* AppDelegate.swift */,
-				E3208A3F220F3D560038F360 /* ViewController.swift */,
+				E3208A70220F69930038F360 /* Actions */,
+				E3208A6F220F682F0038F360 /* ViewControllers */,
+				E3208A6E220F68170038F360 /* Models */,
+				E3208A71220F699B0038F360 /* Reducers */,
 				E3208A6B220F3E9A0038F360 /* Utils */,
 				E3208A41220F3D560038F360 /* Main.storyboard */,
 				E3208A44220F3D580038F360 /* Assets.xcassets */,
@@ -172,8 +187,43 @@
 			isa = PBXGroup;
 			children = (
 				E3208A6C220F405C0038F360 /* Cookie.swift */,
+				E3208A7A220F72C60038F360 /* API.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E3208A6E220F68170038F360 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3208A72220F69B50038F360 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3208A6F220F682F0038F360 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3208A3F220F3D560038F360 /* ViewController.swift */,
+				E3208A7C220F92E90038F360 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E3208A70220F69930038F360 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				E3208A74220F69DA0038F360 /* UserActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		E3208A71220F699B0038F360 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				E3208A76220F6A280038F360 /* UserReducer.swift */,
+				E3208A78220F6AD00038F360 /* AppReducer.swift */,
+			);
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,11 +419,19 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Ottr-iOS/Pods-Ottr-iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HotCocoa/HotCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwiftThunk/ReSwiftThunk.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftySweetness/SwiftySweetness.framework",
 				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HotCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwiftThunk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySweetness.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,8 +446,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3208A7D220F92E90038F360 /* LoginViewController.swift in Sources */,
+				E3208A73220F69B50038F360 /* User.swift in Sources */,
+				E3208A77220F6A280038F360 /* UserReducer.swift in Sources */,
+				E3208A79220F6AD00038F360 /* AppReducer.swift in Sources */,
+				E3208A75220F69DA0038F360 /* UserActions.swift in Sources */,
 				E3208A40220F3D560038F360 /* ViewController.swift in Sources */,
 				E3208A6D220F405C0038F360 /* Cookie.swift in Sources */,
+				E3208A7B220F72C60038F360 /* API.swift in Sources */,
 				E3208A3E220F3D560038F360 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
