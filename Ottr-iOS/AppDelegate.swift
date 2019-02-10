@@ -6,7 +6,12 @@
 //  Copyright © 2019 Christopher Szatmary. All rights reserved.
 //
 
-import UIKit
+import HotCocoa
+import ReSwift
+import ReSwiftThunk
+
+let thunksMiddleware: Middleware<AppState> = createThunksMiddleware()
+let store = Store(reducer: appReducer, state: nil, middleware: [thunksMiddleware])
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let cookie = Cookie.get(forKey: Cookie.userSession) {
+            HTTPCookieStorage.shared.setCookie(cookie)
+        }
+        
         return true
     }
 
