@@ -1,20 +1,37 @@
 PODS:
   - Alamofire (4.8.1)
+  - HotCocoa (1.0.0)
+  - ReSwift (4.0.1)
+  - ReSwiftThunk (1.1.0):
+    - ReSwift (~> 4.0)
+  - SwiftySweetness (2.0.0)
   - TinyConstraints (3.2.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.0)
+  - HotCocoa
+  - ReSwift (~> 4.0.1)
+  - ReSwiftThunk (~> 1.1.0)
+  - SwiftySweetness
   - TinyConstraints (~> 3.2.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - HotCocoa
+    - ReSwift
+    - ReSwiftThunk
+    - SwiftySweetness
     - TinyConstraints
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  HotCocoa: 153145ace7f9f4f9766a8d353494d0fe6f4f1163
+  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  ReSwiftThunk: 727c1549dbd2949472e1c72bec44b1008d7c4f92
+  SwiftySweetness: 65a9c67cf315398cf2f2c51019be945cb47ae831
   TinyConstraints: 5ca700872f726c49d10829d7b00f31e4ec731f36
 
-PODFILE CHECKSUM: c87bb123b1b9bee1ec18c6d1e9e81b87cfec15ba
+PODFILE CHECKSUM: cb7fc52e8acbc2a1a535fc13499d1ba0360b2b46
 
 COCOAPODS: 1.6.0

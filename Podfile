@@ -8,6 +8,10 @@ target 'Ottr-iOS' do
   # Pods for Ottr-iOS
   pod 'Alamofire', '~> 4.8.0'
   pod 'TinyConstraints', '~> 3.2.1'
+  pod 'ReSwift', '~> 4.0.1'
+  pod 'ReSwiftThunk', '~> 1.1.0'
+  pod 'SwiftySweetness'
+  pod 'HotCocoa'
 
   target 'Ottr-iOSTests' do
     inherit! :search_paths
